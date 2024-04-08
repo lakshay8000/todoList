@@ -1,0 +1,26 @@
+.serial-number {
+    min-width: 10%;
+}
+
+.todo-task {
+    min-width: 40%;
+}
+
+.status { 
+    min-width: 20%;
+}
+
+.actions {
+    min-width: 30%;
+}
+
+.actions button {
+    width: fit-content;
+    height: fit-content;
+}
+
+@media (max-width : 1000px) {
+    .actions {
+        flex-direction: column  ;
+    }
+}

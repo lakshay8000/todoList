@@ -1,0 +1,15 @@
+.serial-number {
+    min-width: 15%;
+}
+
+.todo-task {
+    min-width: 35%;
+}
+
+.status { 
+    min-width: 20%;
+}
+
+.actions {
+    min-width: 30%;
+}
