@@ -17,7 +17,7 @@ const todosSlice = createSlice({
       state.Pending= filterTodosByStatus(state.All, "Pending");
       state.Finished= filterTodosByStatus(state.All, "Finished");
 
-      return {...state};
+      return state;
     },
 
     editTodo: (state, action) => {
@@ -33,7 +33,7 @@ const todosSlice = createSlice({
       state.Pending= filterTodosByStatus(state.All, "Pending");
       state.Finished= filterTodosByStatus(state.All, "Finished");
 
-      return {...state};   //  While immer works with some operations like push, pop etc but returning the updated state assures that redux toolkit knows about the changes made to the state.
+      return state;   //  While immer works with some operations like push, pop etc but returning the updated state assures that redux toolkit knows about the changes made to the state.
     },
 
     removeTodo: (state, action) => {
@@ -42,7 +42,7 @@ const todosSlice = createSlice({
       state.Pending= filterTodosByStatus(state.All, "Pending");
       state.Finished= filterTodosByStatus(state.All, "Finished");
 
-      return {...state};
+      return state;
     },
 
     updateStatus : (state, action) => {
@@ -56,12 +56,12 @@ const todosSlice = createSlice({
       state.Pending= filterTodosByStatus(state.All, "Pending");
       state.Finished= filterTodosByStatus(state.All, "Finished");
 
-      return {...state};
+      return state;
     },
 
     changeCategory : (state, action) => {
       state.category= action.payload;
-      return {...state};
+      return state;
     }
 
   },
