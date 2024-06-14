@@ -43,3 +43,8 @@ Welcome to the Todo List App! This is a simple yet powerful application built wi
 ## Feedback and Contributions
 
 Feedback, bug reports, and contributions are welcome! If you have any suggestions for improvement or would like to contribute to the project, feel free to open an issue or submit a pull request.
+
+
+## License:
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

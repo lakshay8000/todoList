@@ -16,7 +16,9 @@ function TodoInput() {
     function insertTodo() {
         // if input is not empty-
         if (inputText.trim() === "") {
-            toast.error("Please enter a valid todo task");
+            toast.error("Please enter a valid todo task", {
+                autoClose: 1500
+            });
         }
         if (inputText != "") {
             dispatch(addTodo({ id: uuidv4(), title: inputText, status: "Pending" }));
